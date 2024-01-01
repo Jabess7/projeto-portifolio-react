@@ -21,8 +21,8 @@ function Projects(){
             title='Portifolio React '
             tech='REACT'
             description='Projeto pessoal de criação de portifólio apresentação de hahahahahahahahaha'
-            repo='https://github.com/Jabess7/LPDNC'
-            site='https://jabess7.github.io/LPDNC/'
+            repo='https://portifolio-rho-inky.vercel.app/'
+            site='https://github.com/Jabess7/projeto-portifolio-react'
             />  
             
          

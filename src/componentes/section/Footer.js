@@ -16,7 +16,7 @@ function Footer(){
             <p>
                 jabess7@gmail.com  
             </p>
-            <p>Jabes Alves </p>
+            <p><strong> © Jabes Alves </strong></p>
         </div>
     )
 }

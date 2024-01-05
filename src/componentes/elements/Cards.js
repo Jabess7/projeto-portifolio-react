@@ -1,28 +1,44 @@
-import styles from'./Cards.module.css'
+import styles from './Cards.module.css'
 import ButtonB from './ButtonB'
 import Projects from '../section/Projects'
+import {useState} from 'react'
 
 
-function Cards({img, title,tech, description, repo, site}){
-    return(
-        <div className={styles.Cards}>
-           <div>
-            <a href={site} target="_blank"><img src={img}></img></a>
-           </div>
-        <section>
-            <h3>
-                {title}           
-            </h3>
-            <p><strong>Tencologia</strong> {tech}
+function Cards({ img, title, tech, description, repo, site }) {
+    const [info, setIfo] = useState(false)
 
-            </p>
-            <p>
-                {description}
-            </p>
-            <ButtonB text=' Repositório' link={repo}  ></ButtonB>
-        </section>
+    function infoOn(){
+        
+        return setIfo(true)
+    }
+    function infOff(){
+        return setIfo(false)
+    }
+
+    return (
+        <div className={styles.Cards} onMouseLeave={infOff} >
+            
+                <div>
+                    <a href={site} target="_blank"><img src={img} onMouseEnter={infoOn}></img>
+                    </a></div>
+                
+            
+            {info === true  && (
+
+                <section >
+                    <h3>
+                        {title}
+                    </h3>
+                    <p><strong>Tencologia</strong> {tech}
+                    </p>
+                    <p>
+                        {description}
+                    </p>
+                    <ButtonB text=' Repositório' link={repo}  ></ButtonB>
+                </section>)}
+                
         </div>
     )
 }
 
-export default  Cards
+export default Cards

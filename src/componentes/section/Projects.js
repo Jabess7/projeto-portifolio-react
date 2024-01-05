@@ -20,7 +20,7 @@ function Projects(){
             img={portifolio}
             title='Portifolio React '
             tech='REACT'
-            description='Projeto pessoal de criação de portifólio apresentação de hahahahahahahahaha'
+            description='Este é o meu primeiro projeto desenvolvido utilizando a biblioteca React, uma das mais populares e poderosas para construção de interfaces de usuário (UI). O objetivo principal deste projeto foi compreender e aplicar os conceitos fundamentais de estado (useState) e efeitos colaterais (useEffect) no desenvolvimento de componentes dinâmicos e interativos'
             repo='https://github.com/Jabess7/projeto-portifolio-react'
             site='https://portifolio-rho-inky.vercel.app/'
             />  

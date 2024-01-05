@@ -18,5 +18,11 @@
 }
 
 .navbar a{
-    color: aliceblue !important;
+    color: aliceblue ;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+   color: #74fac0;    
+    text-decoration: underline;
 }
